@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https:
 
 *{
     margin: 0;
@@ -101,13 +101,13 @@ label{
 .checkbox-task-done {
     width: 24px;
     height: 24px;
-    appearance: none; /* Elimina el estilo predeterminado */
-    background-color: black; /* Fondo negro */
-    border: 2px solid white; /* Borde blanco */
+    appearance: none;
+    background-color: black;
+    border: 2px solid white;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
-    margin-right: 4%; /* Mantiene el margen */
+    margin-right: 4%;
     outline: none;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
@@ -115,97 +115,97 @@ label{
 .checkbox-task-toDo:checked,
 .checkbox-task-doing:checked,
 .checkbox-task-done:checked {
-    background-color: black; /* Fondo negro al estar seleccionado */
-    border-color: white; /* Borde blanco */
-    appearance: checkbox; /* Recupera el check predeterminado */
+    background-color: black;
+    border-color: white;
+    appearance: checkbox;
 }
 
 .select-all-text{
     width: 24px;
     height: 24px;
-    appearance: none; /* Elimina el estilo predeterminado */
-    background-color: black; /* Fondo negro */
-    border: 2px solid white; /* Borde blanco */
+    appearance: none;
+    background-color: black;
+    border: 2px solid white;
     display: inline-block;
     
     cursor: pointer;
-    margin-right: 4%; /* Mantiene el margen */
+    margin-right: 4%;
     margin-left: 4%;
     outline: none;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .select-all-text:checked {
-    background-color: black; /* Fondo negro al estar seleccionado */
-    border-color: white; /* Borde blanco */
-    appearance: checkbox; /* Recupera el check predeterminado */
+    background-color: black;
+    border-color: white;
+    appearance: checkbox;
 }
 
 
     .delete-button {
-        background-color: #FF2354; /* Color de fondo */
-        color: black; /* Color del texto */
-        border: none; /* Sin borde adicional */
-        border-radius: 8px; /* Bordes redondeados, no demasiado */
-        font-size: 16px; /* Texto un poco más grande */
-        padding: 10px 20px; /* Espaciado interno para agrandar el botón */
-        cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
-        transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        background-color: #FF2354;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
         font-weight: bolder;
     }
 
     .done-button,
     .doing-button{
-        background-color: #4D9CEB; /* Color de fondo */
-        color: black; /* Color del texto */
-        border: none; /* Sin borde adicional */
-        border-radius: 8px; /* Bordes redondeados, no demasiado */
-        font-size: 16px; /* Texto un poco más grande */
-        padding: 10px 20px; /* Espaciado interno para agrandar el botón */
-        cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
-        transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        background-color: #4D9CEB;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
         font-weight: bolder;
     }
 
     #button-to-do{
-        background-color: #4D9CEB; /* Color de fondo */
-        color: black; /* Color del texto */
-        border: none; /* Sin borde adicional */
-        border-radius: 8px; /* Bordes redondeados, no demasiado */
-        font-size: 16px; /* Texto un poco más grande */
-        padding: 5px 10px; /* Espaciado interno para agrandar el botón */
-        cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
-        transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        background-color: #4D9CEB;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
         font-weight: bolder;
         margin-left: 4%;
         margin-right: 5%;
     }
 
     #input-to-do {
-        background-color: #f0f0f0; /* Color de fondo gris claro */
-        border: 1px solid #ccc; /* Borde gris claro */
-        border-radius: 8px; /* Bordes redondeados */
-        font-size: 18px; /* Texto un poco más grande */
-        padding: 6px 10px; /* Espaciado interno más grande */
-        width: 50%; /* Ancho del input */
-        color: #333; /* Color del texto */
-        box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
-        transition: background-color 0.3s ease; /* Transición suave para el fondo */
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 18px;
+        padding: 6px 10px;
+        width: 50%;
+        color: #333;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease;
         margin-bottom: 2%;
     }
     
-    /* Placeholder */
+   
     #input-to-do::placeholder {
-        color: #888; /* Color gris para el texto del placeholder */
-        font-style: italic; /* Estilo en cursiva */
-        font-size: 16px; /* Tamaño de fuente del placeholder */
+        color: #888;
+        font-style: italic;
+        font-size: 16px;
     }
     
-    /* Efecto al hacer focus en el input */
+   
     #input-to-do:focus {
-        background-color: #e0e0e0; /* Fondo gris un poco más oscuro cuando tiene el foco */
-        border-color: #FF2354; /* Cambio de borde a un color más intenso cuando está activo */
-        outline: none; /* Eliminar el borde de enfoque predeterminado del navegador */
+        background-color: #e0e0e0;
+        border-color: #FF2354;
+        outline: none;
     }
 
 @media screen and (max-width: 1350px){
