@@ -17,31 +17,31 @@
                 
             </div>
 
-            <label ><input type="checkbox" class="select-all-text" name="select-all">Select all</label>
+            <label ><input type="checkbox" class="select-all-text" name="select-all" onclick="selectAllToDo()">Select all</label>
 
             <div class="buttons-container">
-                <div class="input-container"><button id="button-to-do" onclick="addTask()">add task</button><input type="text" id="input-to-do"></div>
+                <div class="input-container"><button id="button-to-do" onclick="addTask()">Add</button><input type="text" id="input-to-do"></div>
                 <div class="action-buttons-container">
-                    <button onclick="deleteTask()">Delete</button>
-                    <button>Edit</button>
-                    <button>Doing</button>
+                    <button class="delete-button" onclick="deleteCompletedTasksToDo()">Delete</button>
+                    
+                    <button class="doing-button" onclick="sendTaskSelectedToDoing()">Doing</button>
                 </div>
             </div>
         </div>
 
         <div class="main-container" id="doing-container">
             <h2 class="title-container">Doing</h2>
-            <div class="task-container" id="task-container-doing">
+            <div class="task-container" id="doingList">
                 
             </div>
 
-            <label><input class="select-all-text" type="checkbox" name="select-all">Select all </label>
+            <label class="label-select-all-text"><input class="select-all-text" type="checkbox" name="select-all" onclick="selectAllDoing()">Select all </label>
 
             <div class="buttons-container">
                 <div class="action-buttons-container">
-                    <button>Delete</button>
-                    <button>Edit</button>
-                    <button>Done</button>
+                    <button class="delete-button" onclick="deleteCompletedTasksDoing()">Delete</button>
+                    
+                    <button class="done-button" onclick="sendTaskSelectedToDone()">Done</button>
                 </div>
                 
             </div>
@@ -53,11 +53,11 @@
                 
             </div>
 
-            <label ><input class="select-all-text" type="checkbox" name="select-all">Select all </label>
+            <label ><input class="select-all-text" type="checkbox" name="select-all" onclick="selectAllDone()">Select all </label>
 
             <div class="buttons-container">
                 <div class="action-buttons-container">
-                    <button>Delete</button>
+                    <button class="delete-button" onclick="deleteCompletedTasksDone()">Delete</button>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@
 
 body{
     background-image: url("./images/background.png");
+    background-attachment: fixed;
     
 }
 
@@ -49,7 +50,7 @@ h2{
     box-shadow: 0 0 10px 1px rgb(167, 167, 167);
     padding: 20px;
     width: 40vw;
-    height: 60vh;
+    height: 70vh;
 }
 
 .task-container{
@@ -78,7 +79,8 @@ h2{
 }
 
 .select-all-text{
-    margin-top: 10%;
+    margin-top: 8%;
+    margin-left: 12%;
 }
 
 .action-buttons-container{
@@ -86,6 +88,146 @@ h2{
     flex-direction: row;
     gap: 140px;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkbox-task-toDo,
+.checkbox-task-doing,
+.checkbox-task-done {
+    width: 24px;
+    height: 24px;
+    appearance: none; /* Elimina el estilo predeterminado */
+    background-color: black; /* Fondo negro */
+    border: 2px solid white; /* Borde blanco */
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 4%; /* Mantiene el margen */
+    outline: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.checkbox-task-toDo:checked,
+.checkbox-task-doing:checked,
+.checkbox-task-done:checked {
+    background-color: black; /* Fondo negro al estar seleccionado */
+    border-color: white; /* Borde blanco */
+    appearance: checkbox; /* Recupera el check predeterminado */
+}
+
+.select-all-text{
+    width: 24px;
+    height: 24px;
+    appearance: none; /* Elimina el estilo predeterminado */
+    background-color: black; /* Fondo negro */
+    border: 2px solid white; /* Borde blanco */
+    display: inline-block;
+    
+    cursor: pointer;
+    margin-right: 4%; /* Mantiene el margen */
+    margin-left: 4%;
+    outline: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.select-all-text:checked {
+    background-color: black; /* Fondo negro al estar seleccionado */
+    border-color: white; /* Borde blanco */
+    appearance: checkbox; /* Recupera el check predeterminado */
+}
+
+
+    .delete-button {
+        background-color: #FF2354; /* Color de fondo */
+        color: black; /* Color del texto */
+        border: none; /* Sin borde adicional */
+        border-radius: 8px; /* Bordes redondeados, no demasiado */
+        font-size: 16px; /* Texto un poco más grande */
+        padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+        cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        font-weight: bolder;
+    }
+
+    .done-button,
+    .doing-button{
+        background-color: #4D9CEB; /* Color de fondo */
+        color: black; /* Color del texto */
+        border: none; /* Sin borde adicional */
+        border-radius: 8px; /* Bordes redondeados, no demasiado */
+        font-size: 16px; /* Texto un poco más grande */
+        padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+        cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        font-weight: bolder;
+    }
+
+    #button-to-do{
+        background-color: #4D9CEB; /* Color de fondo */
+        color: black; /* Color del texto */
+        border: none; /* Sin borde adicional */
+        border-radius: 8px; /* Bordes redondeados, no demasiado */
+        font-size: 16px; /* Texto un poco más grande */
+        padding: 5px 10px; /* Espaciado interno para agrandar el botón */
+        cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+        font-weight: bolder;
+        margin-left: 4%;
+        margin-right: 5%;
+    }
+
+    #input-to-do {
+        background-color: #f0f0f0; /* Color de fondo gris claro */
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        font-size: 18px; /* Texto un poco más grande */
+        padding: 6px 10px; /* Espaciado interno más grande */
+        width: 50%; /* Ancho del input */
+        color: #333; /* Color del texto */
+        box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+        transition: background-color 0.3s ease; /* Transición suave para el fondo */
+        margin-bottom: 2%;
+    }
+    
+    /* Placeholder */
+    #input-to-do::placeholder {
+        color: #888; /* Color gris para el texto del placeholder */
+        font-style: italic; /* Estilo en cursiva */
+        font-size: 16px; /* Tamaño de fuente del placeholder */
+    }
+    
+    /* Efecto al hacer focus en el input */
+    #input-to-do:focus {
+        background-color: #e0e0e0; /* Fondo gris un poco más oscuro cuando tiene el foco */
+        border-color: #FF2354; /* Cambio de borde a un color más intenso cuando está activo */
+        outline: none; /* Eliminar el borde de enfoque predeterminado del navegador */
+    }
+
+@media screen and (max-width: 1350px){
+    #main-content{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        margin-left: 80px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .main-container{
+        margin-bottom: 5%;
+    }
+
+    .action-buttons-container{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        justify-content: center;
+        margin-top: 4%;
+    }
+}
