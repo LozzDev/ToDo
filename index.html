@@ -15,7 +15,7 @@
             <h2 class="title-container">To do</h2>
             <div class="task-container">
                 <ul class="task-list" id="task-list-todo">
-                    <!-- usar <li><label><input type="checkbox"> tarea 1 <label><li> -->
+                <!--<li class="to-do-element"><label><input type="checkbox"/> tarea 1 <label><li>-->   
 
                 </ul>
             </div>
@@ -23,7 +23,7 @@
             <label class="select-all-text"><input type="checkbox" name="select-all">Select all</label>
 
             <div class="buttons-container">
-                <div><button></button><input type="text"></div>
+                <div><button id="button-to-do" onclick="addTask()">add task</button><input type="text" id="input-to-do"></div>
                 <div>
 
                 </div>
@@ -78,5 +78,25 @@
         <p></p>
         <img src="" alt="">
     </footer>
+    <script>
+        const toDoList = document.getElementById("task-list-todo");
+        
+        const toDoInput = document.getElementById("input-to-do");
+        
+        function addTask(){
+            const task = toDoInput.value;
+            
+            const taskLi = document.createElement("li");
+            taskLi.classList.add("task");
+            taskLi.textContent = task;
+
+            toDoList.appendChild(taskLi);
+
+            toDoInput.value = "";
+        }
+        
+
+
+    </script>
 </body>
 </html>
