@@ -6,6 +6,7 @@
     font-family: "Ubuntu", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 15px;
 }
 
 body{
@@ -28,6 +29,7 @@ header{
 h1{
     font-weight: 600;
     text-shadow: 0px 1px 4px rgb(167, 167, 167);
+    font-size: 30px;
     
 }
 h2{
@@ -50,7 +52,7 @@ h2{
     box-shadow: 0 0 10px 1px rgb(167, 167, 167);
     padding: 20px;
     width: 40vw;
-    height: 70vh;
+    height: 600px;
 }
 
 .task-container{
@@ -79,16 +81,16 @@ h2{
 }
 
 .select-all-text{
-    margin-top: 8%;
+    margin-top: 5%;
     margin-left: 12%;
 }
 
 .action-buttons-container{
     display: flex;
     flex-direction: row;
-    gap: 140px;
+    gap: 10vw;
     justify-content: center;
-    margin-top: 4%;
+    margin-top: 12%;
 }
 
 label{
@@ -126,12 +128,13 @@ label{
     appearance: none;
     background-color: black;
     border: 2px solid white;
-    display: inline-block;
-    
+    align-items: center;
+    display: inline-flex;
     cursor: pointer;
     margin-right: 4%;
-    margin-left: 4%;
+    margin-left: 2%;
     outline: none;
+    
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -191,9 +194,11 @@ label{
         color: #333;
         box-sizing: border-box;
         transition: background-color 0.3s ease;
-        margin-bottom: 2%;
+        
     }
-    
+    #action-buttons-container-to-do{
+        margin-top: 4%;
+    }
    
     #input-to-do::placeholder {
         color: #888;
@@ -226,8 +231,25 @@ label{
     .action-buttons-container{
         display: flex;
         flex-direction: row;
-        gap: 60px;
+        gap: 5vw;
         justify-content: center;
-        margin-top: 4%;
+        
+    }
+
+    .delete-button {
+        padding: 5px 10px;
+    }
+
+    .done-button,
+    .doing-button{
+        padding: 5px 10px;
+    }
+
+    label{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    h1{
+        font-size: 25px;
     }
 }

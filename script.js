@@ -26,11 +26,11 @@ function deleteCompletedTasksToDo() {
         if (!checkbox.checked) {
             remainingTasks.push(label.textContent.trim());
         } else {
-            label.remove(); // Elimina la tarea completada de la lista visual
+            label.remove(); 
         }
     });
 
-    // Actualiza el localStorage con las tareas restantes
+   
     localStorage.setItem("tasks", JSON.stringify(remainingTasks));
 }
 
