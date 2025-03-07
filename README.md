@@ -35,7 +35,7 @@ Follow these steps to set up the project locally:
     ```  
 2. **Navigate to the project directory**:  
     ```bash  
-    cd <ToDo>  
+    cd ToDo
     ```  
 3. **Open the project in your browser**:  
     - Open the `index.html` file directly in your preferred web browser.  
