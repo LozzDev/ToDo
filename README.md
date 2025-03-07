@@ -31,11 +31,11 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**:  
     ```bash  
-    git clone <https://github.com/LozzDev/To-do.git>  
+    git clone <https://github.com/LozzDev/ToDo.git>  
     ```  
 2. **Navigate to the project directory**:  
     ```bash  
-    cd <your-project-folder>  
+    cd <ToDo>  
     ```  
 3. **Open the project in your browser**:  
     - Open the `index.html` file directly in your preferred web browser.  
